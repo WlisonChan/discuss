@@ -1,34 +1,67 @@
 <template>
-  <div id="app">
-    <v-button>按钮</v-button>
-  </div>
+
+<Index></Index>
+
 </template>
 
 <script>
 import Vue from 'vue'
-
+import Index from "./components/Index";
+import VueRouter from 'vue-router'
+import VueCookies from 'vue-cookies'
 //import css
 import 'vue-beauty/package/style/vue-beauty.min.css'
 
 //import components
 import vueBeauty from 'vue-beauty'
+
+Vue.use(VueRouter)
 Vue.use(vueBeauty)
+Vue.use(VueCookies)
 
 export default {
+
   name: 'App',
   components: {
-
-  }
+    Index
+  },
+  data: () => ({
+    labelCol: {
+      span: 6
+    },
+    wrapperCol: {
+      span: 10
+    }
+  })
 }
+
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.components-layout-demo-basic {
+  margin: 2rem;
+}
+
+.components-layout-demo-basic .ant-layout-header,
+.components-layout-demo-basic .ant-layout-footer {
+  background: #ffffff;
+  color: #fff;
+}
+
+.components-layout-demo-basic .ant-layout-footer {
+  line-height: 1.5;
+}
+
+.components-layout-demo-basic .ant-layout-sider {
+  background: #ffffff;
+  color: #fff;
+  line-height: 120px;
+}
+
+.components-layout-demo-basic .ant-layout-content {
+  background: #ffffff;
+  color: #fff;
+  min-height: 120px;
+  line-height: 120px;
 }
 </style>
