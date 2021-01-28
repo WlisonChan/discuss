@@ -1,6 +1,8 @@
 <template>
-
-<Index></Index>
+<div>
+  <Index v-if="login.flag"></Index>
+  <Discuss v-else></Discuss>
+</div>
 
 </template>
 
@@ -14,6 +16,7 @@ import 'vue-beauty/package/style/vue-beauty.min.css'
 
 //import components
 import vueBeauty from 'vue-beauty'
+import Discuss from "./components/Discuss";
 
 Vue.use(VueRouter)
 Vue.use(vueBeauty)
@@ -23,9 +26,13 @@ export default {
 
   name: 'App',
   components: {
+    Discuss,
     Index
   },
   data: () => ({
+    login:{
+      flag:false
+    },
     labelCol: {
       span: 6
     },

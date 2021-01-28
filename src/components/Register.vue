@@ -18,9 +18,16 @@
       >
         <v-input size="large" v-model="dynamicValidateForm.email"></v-input>
       </v-form-item>
+      <v-form-item label="邮箱验证码" :label-col="labelCol" :wrapper-col="wrapperCol">
+        <v-col class="demo-col demo-col-4" span="16">
+          <v-input placeholder="请输入验证码" class="demo-col demo-col-4" span="16"></v-input>
+        </v-col>
+        <v-col class="demo-col demo-col-5" span="8">
+          <v-button class="demo-col demo-col-5" span="8">发送邮件</v-button>
+        </v-col>
+      </v-form-item>
 
       <v-form-item :wrapper-col="{offset:6, span: 14 }">
-
         <button type="submit" class="submit_btn" id="btnSubmit">注册</button>
       </v-form-item>
     </v-form>

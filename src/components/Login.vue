@@ -2,10 +2,10 @@
   <div id="login">
     <form method="post" action="">
       <ul class="group_input">
-        <v-form-item label="用户名" :label-col="labelCol" :wrapper-col="wrapperCol">
+        <v-form-item label="用户名" >
           <v-input type="text" placeholder="请输入账号" size="large"></v-input>
         </v-form-item>
-        <v-form-item label="密码" :label-col="labelCol" :wrapper-col="wrapperCol">
+        <v-form-item label="密码">
           <v-input type="password" placeholder="请输入密码" size="large"></v-input>
         </v-form-item>
       </ul>

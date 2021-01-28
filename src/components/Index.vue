@@ -23,22 +23,22 @@
       </vue-particles>
     </div>
     <div id="wrapper">
-      <div>
-        <img src="../assets/img/zhihu_logo.png"/>
-        <h2>与世界分享你的知识、经验和见解</h2>
+      <div id="logo-img">
+        <img id="discuss-logo" src="../assets/img/discuss-logo.png"/>
+        <h2>Come and share your world</h2>
       </div>
       <nav class="switch_nav">
-        <router-link :to="{name:'register'}" >注册</router-link>
-        <router-link :to="{name:'login'}" >登录</router-link>
+        <router-link :to="{name:'register'}">注册</router-link>
+        <router-link :to="{name:'login'}">登录</router-link>
         <div class="switch_bottom" id="switch_bottom"></div>
       </nav>
       <router-view></router-view>
       <div id="footer">
-        <span>&copy;2017知乎</span><span>·</span><a href="javascript:;">知乎圆桌</a><span>·</span><a
+        <span>&copy;2021 William</span><span>·</span><a href="javascript:;">圆桌</a><span>·</span><a
         href="javascript:;">发现</a><span>·</span><a href="javascript:;">移动应用</a><span>·</span><a href="javascript:;">使用机构账号登录</a><span>·</span><a
-        href="javascript:;">联系我们</a><span>·</span><a href="javascript:;">工作来知乎</a><br/>
+        href="javascript:;">联系我们</a><span>·</span><a href="javascript:;">工作来Tencent</a><br/>
         <span>·</span><a
-        href="javascript:;">京ICP证110745号</a><span>·</span><span>京公网安备11010802010035号</span><span>·</span><a
+        href="javascript:;">京ICP证******号</a><span>·</span><span>京公网安备**********号</span><span>·</span><a
         href="javascript:;">出版物经营许可证</a>
       </div>
     </div>
@@ -56,8 +56,8 @@ Vue.use(Register)
 
 export default {
   name: "Index",
-  components:{
-    Register,Login
+  components: {
+    Register, Login
   }
 }
 
@@ -72,6 +72,21 @@ export default {
   width: 100%;
   height: 100%;
   background: #ffffff;
+  text-align: center;
+}
+
+#logo-img {
+  text-align: left;
+}
+
+#discuss-logo {
+  position: relative;
+
+  width: 600px;
+  height: 150px;
+}
+
+h2 {
   text-align: center;
 }
 </style>
