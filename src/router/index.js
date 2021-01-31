@@ -5,6 +5,9 @@ import Register from "../components/Register";
 import Paper from "../components/Paper";
 import Introduction from "../components/Introdution";
 import DiscussPost from "../components/DiscussPost"
+import Anonymous from "../components/Anonymous";
+import Recommend from "../components/Recommend";
+import PostDetail from "../components/PostDetail";
 
 Vue.use(VueRouter)
 
@@ -48,6 +51,21 @@ export default new VueRouter({
       path:'/discussPost',
       name:'discussPost',
       component: DiscussPost
+    },
+    {
+      path:'/anonymous',
+      name:'anonymous',
+      component: Anonymous
+    },
+    {
+      path:'/recommend',
+      name:'recommend',
+      component: Recommend
+    },
+    {
+      path:'/postDetail',
+      name:'postDetail',
+      component:PostDetail
     }
   ]
 })

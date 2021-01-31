@@ -1,27 +1,7 @@
 <template>
   <div id="container">
     <!-- particles.js container -->
-    <div id="particles-js">
-      <vue-particles
-        color="#a7dcff"
-        :particleOpacity="0.7"
-        :particlesNumber="60"
-        shapeType="polygon"
-        :particleSize="4"
-        linesColor="#a7dcff"
-        :linesWidth="1"
-        :lineLinked="true"
-        :lineOpacity="0.4"
-        :linesDistance="150"
-        :moveSpeed="2"
-        :hoverEffect="true"
-        hoverMode="grab"
-        :clickEffect="true"
-        clickMode="push"
-        class="lizi"
-      >
-      </vue-particles>
-    </div>
+    <Magic></Magic>
     <div id="wrapper">
       <div id="logo-img">
         <img id="discuss-logo" src="../assets/img/discuss-logo.png"/>
@@ -50,14 +30,14 @@ import Vue from 'vue'
 import VueParticles from 'vue-particles'
 import Register from "./Register";
 import Login from "./Login";
+import Magic from "./Magic";
 
 Vue.use(VueParticles)
-Vue.use(Register)
 
 export default {
   name: "Index",
   components: {
-    Register, Login
+    Register, Login,Magic
   }
 }
 

@@ -2,8 +2,8 @@
 <div>
   <Index v-if="login.flag"></Index>
   <Discuss v-else></Discuss>
+<!--  <Temp></Temp>-->
 </div>
-
 </template>
 
 <script>
@@ -11,6 +11,7 @@ import Vue from 'vue'
 import Index from "./components/Index";
 import VueRouter from 'vue-router'
 import VueCookies from 'vue-cookies'
+import Temp from "./components/Temp";
 //import css
 import 'vue-beauty/package/style/vue-beauty.min.css'
 
@@ -27,7 +28,8 @@ export default {
   name: 'App',
   components: {
     Discuss,
-    Index
+    Index,
+    Temp
   },
   data: () => ({
     login:{
@@ -45,6 +47,8 @@ export default {
 </script>
 
 <style>
+@import "assets/css/navbar.css";
+@import "https://at.alicdn.com/t/font_1471409_g6hvg6yqo15.css";
 .components-layout-demo-basic {
   margin: 2rem;
 }
@@ -70,5 +74,8 @@ export default {
   color: #fff;
   min-height: 120px;
   line-height: 120px;
+}
+html,body{
+  cursor: url('./assets/cursor/normal.png'),auto;
 }
 </style>

@@ -1,5 +1,11 @@
 <template>
-  <mavon-editor v-model="context" :toolbars="toolbars" @keydown=""/>
+  <div>
+    <v-header></v-header>
+    <v-content>
+      <mavon-editor v-model="context" :toolbars="toolbars" @keydown=""/>
+    </v-content>
+    <v-footer></v-footer>
+  </div>
 </template>
 
 <script>
