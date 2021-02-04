@@ -138,11 +138,9 @@ export default {
     },
     showTime(){
       this.showTimes = true;
-      console.log(this.showTimes)
     },
     unShowTime(){
       this.showTimes = false;
-      console.log(this.showTimes)
     }
   }
 }

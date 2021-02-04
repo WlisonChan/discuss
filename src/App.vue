@@ -14,6 +14,9 @@ import VueCookies from 'vue-cookies'
 import Temp from "./components/Temp";
 //import css
 import 'vue-beauty/package/style/vue-beauty.min.css'
+import ECharts from 'vue-echarts'
+import 'echarts/lib/chart/line'
+Vue.component('chart', ECharts)
 
 //import components
 import vueBeauty from 'vue-beauty'
