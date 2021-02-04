@@ -21,20 +21,20 @@ body {
   font: 12px/1.5 \5b8b\4f53;
 }
 
-#msgBox {
-  width: 500px;
+.msgBox {
+  width: 100%;
   background: #fff;
   border-radius: 5px;
-  margin: 10px auto;
+  margin: 10px;
   padding-top: 10px;
 }
 
-#msgBox form h2 {
+.msgBox form h2 {
   font-weight: 400;
   font: 400 18px/1.5 \5fae\8f6f\96c5\9ed1;
 }
 
-#msgBox form {
+.msgBox form {
   /*background: url(../img/boxBG.jpg) repeat-x 0 bottom;*/
   padding: 0 20px 15px;
 }
@@ -57,19 +57,19 @@ body {
 }
 
 #conBox {
-  width: 448px;
+  width: 100%;
   resize: none;
   height: 65px;
   overflow: auto;
 }
 
-#msgBox form div {
+.msgBox form div {
   position: relative;
   color: #999;
   margin-top: 10px;
 }
 
-#msgBox img {
+.msgBox img {
   border-radius: 3px;
 }
 
@@ -109,16 +109,16 @@ body {
   background-position: 0 -30px;
 }
 
-#msgBox form .maxNum {
+.msgBox form .maxNum {
   font: 26px/30px Georgia, Tahoma, Arial;
   padding: 0 5px;
 }
 
-#msgBox .list {
+.msgBox .list {
   padding: 10px;
 }
 
-#msgBox .list h3 {
+.msgBox .list h3 {
   position: relative;
   height: 33px;
   font-size: 14px;
@@ -127,7 +127,7 @@ body {
   border: 1px solid #dee4e7;
 }
 
-#msgBox .list h3 span {
+.msgBox .list h3 span {
   position: absolute;
   left: 6px;
   top: 6px;
@@ -137,12 +137,12 @@ body {
   padding: 0 15px;
 }
 
-#msgBox .list ul {
+.msgBox .list ul {
   overflow: hidden;
   zoom: 1;
 }
 
-#msgBox .list ul li {
+.msgBox .list ul li {
   float: left;
   clear: both;
   width: 100%;
@@ -152,11 +152,11 @@ body {
   overflow: hidden;
 }
 
-#msgBox .list ul li.hover {
+.msgBox .list ul li.hover {
   background: #f5f5f5;
 }
 
-#msgBox .list .userPic {
+.msgBox .list .userPic {
   float: left;
   width: 50px;
   height: 50px;
@@ -166,7 +166,7 @@ body {
   border-radius: 3px;
 }
 
-#msgBox .list .content {
+.msgBox .list .content {
   float: left;
   width: 400px;
   font-size: 14px;
@@ -175,21 +175,21 @@ body {
   word-wrap: break-word;
 }
 
-#msgBox .list .userName {
+.msgBox .list .userName {
   display: inline;
   padding-right: 5px;
 }
 
-#msgBox .list .userName a {
+.msgBox .list .userName a {
   color: #2b4a78;
 }
 
-#msgBox .list .msgInfo {
+.msgBox .list .msgInfo {
   display: inline;
   word-wrap: break-word;
 }
 
-#msgBox .list .times {
+.msgBox .list .times {
   color: #889db6;
   font: 12px/18px arial;
   margin-top: 5px;
@@ -197,11 +197,11 @@ body {
   zoom: 1;
 }
 
-#msgBox .list .times span {
+.msgBox .list .times span {
   float: left;
 }
 
-#msgBox .list .times a {
+.msgBox .list .times a {
   float: right;
   color: #889db6;
   display: none;
